@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/home_style.css" />
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item home-item"><a href="./home.html">Home</a></li>
+            <li class="nav-item"><a href="./Todos.html">Todos</a> </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form class="form-info">
+        <div class="div-form">
+        <label for="title">Title *</label>
+        <input class="inp inpp" type="text" name="title" id="title" placeholder="What will you do today?" required />
+        <div class="warning">The title is required</div>
+        <label for="description">Description</label>
+        <textarea class="inp inpp" type="text" name="description" id="description" placeholder="Some information" ></textarea>
+        <label for="date">Due Date *</label>
+        <input class="inp inpp" type="date" name="date" id="date" value="" placeholder="10/31/2021" required />
+        <div class="warning">The Due Date is required</div>
+        <input class="inp" type="submit" name="submit" id="submit" value="Submit" />
+        </div>
+    </form>
+
+    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast my-5"  data-bs-autohide="true" data-bs-delay="3000" >
+        <div class="toast-header bg-success">
+            <strong class="me-auto h1">Successful</strong>
+<!--            <small>now</small>-->
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body h1">
+           The todo submited successfully.
+        </div>
+    </div>
+
+</main>
+
+<script src="./javascripts/bootstrap.bundle.js"></script>
+<script src="./javascripts/home.js"></script>
+</body>
+</html>

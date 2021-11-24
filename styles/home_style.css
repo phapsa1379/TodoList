@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html
+{
+    font-size: 62.5%;
+
+}
+
+body
+{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #eeecec;
+}
+main
+{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    height: calc(100vh - 66px);
+    /*justify-content: center;*/
+   // align-items: center;
+    //background-color:yellow;
+
+
+}
+.navbar
+{
+
+    background-color: #0652DD;
+}
+.nav-item
+{
+    padding: 2rem 3rem;
+}
+.nav-list
+{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+
+}
+
+.nav-item>a
+{
+    text-decoration: none;
+   color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.home-item
+{
+    margin-left: 2rem;
+}
+
+.form-info
+{
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 60%;
+   // background-color:red;
+    display: flex;
+    justify-content: center;
+
+}
+
+.div-form
+{
+   width:80%;
+   // background-color:blue;
+
+}
+
+.inp
+{
+    height: 5rem;
+    width: 100%;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    /*margin-bottom: 4rem;*/
+    text-indent: 1rem;
+    border-radius: 0.5rem;
+    border: 4px solid #1e3799;
+    padding: 1rem 0;
+}
+
+.warning
+{
+    display: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #eb3b5a;
+}
+label
+{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #0652DD;
+}
+input:focus
+{
+    outline: none;
+}
+
+#submit
+{
+    margin-top: 7rem;
+    color: whitesmoke;
+    background-color: #4963d2;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px 0 rgba(45, 45, 45, 0.88);
+    border:none;
+}
+
+.toast
+{
+    //background-color:#20bf6b;
+    background-color:#009432;
+    color: whitesmoke;
+}
+.toast-header
+{
+    background-color:#20bf6b!important;
+}
+.toast-header>strong
+{
+    color: whitesmoke !important;
+}
+
+#description
+{
+    height: 20rem;
+}
+
+.toast_come
+{
+    animation:come_anime 1s forwards;
+}
+
+@keyframes come_anime
+{
+    0%
+    {
+        left:0;
+    }
+    100%
+    {
+        transform: translateX(20rem);
+    }
+}
+
+.inpp
+{
+    background-color:whitesmoke;
+}
+
+
+.shake-class{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

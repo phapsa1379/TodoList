@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/bootstrap.css"/>
+    <link rel="stylesheet" href="./styles/todos_style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>Todos</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item home-item"><a href="./home.html">Home</a></li>
+            <li class="nav-item"><a href="./Todos.html">Todos</a> </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="sec1">
+        <div class="head-part"><i class="fas fa-check-square"></i>My Todo-s</div>
+    </section>
+    <section id="sec2">
+
+        <div class="dos-part">
+        </div>
+    </section>
+    <section id="sec3">
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
+                </li>
+                <li class="page-item active first-page" aria-current="page"><a class="page-1 page-link" href="#">1</a></li>
+<!--                <li class="page-item" >-->
+<!--                    <a class="page-link" href="#">2</a>-->
+<!--                </li>-->
+<!--                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+                <li class="page-item">
+                    <a class="page-link" href="#">&raquo;</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div class="modal modal-" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Do you want to delete this item?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text">Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">cancel</button>
+                    <button type="button" class="btn btn-primary delete-btn">delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="./javascripts/bootstrap.bundle.js"></script>
+<script src="javascripts/todos.js"></script>
+</body>
+</html>

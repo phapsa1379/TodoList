@@ -1,0 +1,218 @@
+@import "home_style.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: #eeecec;
+    height: 100vh;
+
+}
+
+main
+{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#sec1
+{
+   margin: 2rem 0;
+}
+
+.head-part
+{
+    color: #1266F1;
+    font-size: 5rem;
+    font-weight:900;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.fa-check-square
+{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.add-part
+{
+    background-color:white;
+    /*width: 80%;*/
+    height: 12rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin-bottom: 1rem;
+    box-shadow: 1px 5px 10px 0 #434343;
+
+}
+
+.inp
+{
+    height: 10rem;
+    width: 80%;
+    border: none;
+    font-size: 3rem;
+    text-indent: 2rem;
+    border-radius: 2rem;
+}
+
+.inp:focus
+{
+    outline: none;
+}
+
+.inp::placeholder
+{
+    font-size: 3rem;
+    text-indent: 2rem;
+    color: gray;
+}
+
+.add-btn
+{
+    background-color: #1266F1;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.line
+{
+    border-top: 0.3rem solid #cacaca;
+    margin-bottom: 5rem;
+}
+
+.dos-part
+{
+
+    height: 65rem;
+    /*background-color: red;*/
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-top: 0.3rem solid #cacaca;
+    border-bottom: 0.3rem solid #cacaca;
+
+    overflow-x: hidden;
+}
+
+.sub-do
+{
+    display: flex;
+    align-items: center;
+}
+
+.do-input
+{
+
+    height: 5rem;
+    width: 80%;
+    text-indent: 2rem;
+    font-size: 2rem;
+    /*background-color:white;*/
+    padding: 1.3rem 0;
+    /*background-color: transparent;*/
+    margin-left: 3rem;
+    border-radius: 1rem;
+}
+
+
+.do-check
+{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.do-icons
+{
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+.fa-pencil-alt
+{
+    font-size: 3rem;
+    color: #50C6ED;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-trash-alt
+{
+    font-size: 3rem;
+    color: #F75673;
+    cursor:pointer;
+    display: none;
+}
+
+.alert
+{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: red;
+
+
+}
+
+.sub-do:hover .fa-pencil-alt
+{
+    display: inline;
+}
+
+.sub-do:hover .fa-trash-alt
+{
+    display: inline;
+}
+
+
+.shake-class{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#sec3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color:red;
+    height: 14rem;
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+}
